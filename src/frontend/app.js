@@ -21,7 +21,12 @@ app.get('/api/users', async (req, res) => {
 
 app.get('/api/users/:id', async (req, res) => {
     try {
-        const response = await axios.get(`${API_URL}/users/${req.params.id}`);
+        // Validate that id is a positive integer to prevent SSRF
+        const userId = parseInt(req.params.id, 10);
+        if (isNaN(userId) || userId < 1) {
+            return res.status(400).json({ error: 'Invalid user ID' });
+        }
+        const response = await axios.get(`${API_URL}/users/${userId}`);
         res.json(response.data);
     } catch (error) {
         res.status(error.response?.status || 500).json({ 
