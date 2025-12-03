@@ -50,7 +50,8 @@ function processUsers(users) {
 }
 
 app.listen(PORT, () => {
-    console.log(`Frontend server running on port ${PORT}`);
+    console.log(`🚀 Frontend server running on port ${PORT}`);
+    console.log(`📱 Open http://localhost:${PORT} in your browser`);
 });
 
 module.exports = app;
