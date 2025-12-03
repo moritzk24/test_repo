@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test App</title>
+    <title>User Management System</title>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -67,19 +67,26 @@
             outline: none;
             border-color: #667eea;
         }
+        .container {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 25px;
+        }
     </style>
 </head>
 <body>
-    <h1>Test App - User Management</h1>
+    <h1>🚀 User Management System</h1>
     
-    <div>
+    <div class="container">
         <h2>Create User</h2>
         <input type="text" id="userName" placeholder="Name">
         <input type="email" id="userEmail" placeholder="Email">
         <button onclick="createUser()">Create User</button>
     </div>
     
-    <div>
+    <div class="container">
         <h2>Users</h2>
         <ul class="user-list" id="userList"></ul>
         <button onclick="loadUsers()">Refresh Users</button>
