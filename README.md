@@ -36,6 +36,9 @@ test_repo/
 - Express 4.18.2
 - Axios 1.4.0
 - Lodash 4.17.21
+- Dotenv 16.3.1
+- CORS 2.8.5
+- Morgan 1.10.0
 
 ## Installation
 
