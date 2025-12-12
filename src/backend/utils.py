@@ -20,7 +20,20 @@ def validate_email(email):
     return '@' in email and '.' in email
 
 
+def sanitize_string(text):
+    """Remove potentially harmful characters from input"""
+    if not text:
+        return ""
+    return text.strip().replace('<', '').replace('>', '')
+
+
 def log_message(message, level='INFO'):
     """Simple logging function"""
     timestamp = datetime.utcnow().isoformat()
     print(f"[{timestamp}] {level}: {message}")
+
+
+def calculate_age(birth_year):
+    """Calculate age from birth year"""
+    current_year = datetime.now().year
+    return current_year - birth_year
