@@ -2,6 +2,8 @@
 
 A simple test repository for testing Software Composition Analysis (SCA) tools and repository analyzers.
 
+---
+
 ## Project Structure
 
 This is a basic web application with a Python Flask backend and Node.js Express frontend.
