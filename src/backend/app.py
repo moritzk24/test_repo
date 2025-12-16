@@ -1,5 +1,5 @@
 """
-Main application entry point
+Main application entry point for Flask backend
 """
 from flask import Flask, jsonify, request
 from database import Database
