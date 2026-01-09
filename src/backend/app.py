@@ -1,5 +1,7 @@
 """
-Main application entry point for Flask backend
+Main application entry point for Flask backend.
+
+This module provides the REST API endpoints for user management.
 """
 from flask import Flask, jsonify, request
 from database import Database

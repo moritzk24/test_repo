@@ -2,6 +2,7 @@ const express = require('express');
 const axios = require('axios');
 const _ = require('lodash');
 
+// Initialize Express application
 const app = express();
 const PORT = process.env.PORT || 3000;
 const API_URL = 'http://localhost:5000/api';
