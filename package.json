@@ -13,7 +13,7 @@
     "sca",
     "analysis"
   ],
-  "author": "author-name",
+  "author": "author-name-placeholder",
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.2",
