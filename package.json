@@ -13,7 +13,7 @@
     "sca",
     "analysis"
   ],
-  "author": "bughunter till",
+  "author": "till",
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.2",
